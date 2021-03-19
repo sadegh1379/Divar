@@ -12,7 +12,8 @@ export const DarkTheme = {
         text : '#fff',
         backgroundHead : '#424242',
         textHead : '#fff',
-        textIcon : '#e0e0e0'
+        textIcon : '#e0e0e0',
+        caption : '#757575'
 
       },
    
@@ -27,6 +28,7 @@ export const LightTheme = {
         text : '#333',
         backgroundHead : '#fafafa',
         textHead : '#333',
-        textIcon : '#757575'
+        textIcon : '#757575',
+        caption : '#9e9e9e'
       },
     }   
