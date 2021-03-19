@@ -5,12 +5,28 @@ import {  DarkTheme as PaperDarkTheme , DefaultTheme as PaperDefaultTheme } from
 export const DarkTheme = {
     ...NavigationDarkTheme,
     ...PaperDarkTheme,
-    color : '#fff',
-    background : '#333'
+    colors: {
+        ...NavigationDarkTheme.colors,
+        ...PaperDarkTheme.colors,
+        background: '#333',
+        text : '#fff',
+        backgroundHead : '#424242',
+        textHead : '#fff',
+        textIcon : '#e0e0e0'
+
+      },
+   
 }
 export const LightTheme = {
     ...NavigationDefaultTheme,
     ...PaperDefaultTheme,
-    color :  '#333',
-    background : '#fff',
-}
+    colors: {
+        ...NavigationDefaultTheme.colors,
+        ...PaperDefaultTheme.colors,
+        background: '#fff',
+        text : '#333',
+        backgroundHead : '#fafafa',
+        textHead : '#333',
+        textIcon : '#757575'
+      },
+    }   
