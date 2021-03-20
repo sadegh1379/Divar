@@ -4,7 +4,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "./Home";
 import ChatScreen from "./Chat";
 import ProfileScreen from "./Profile";
-import AddScreen from "./Add";
 import GroupeScreen from "./Groupe";
 import { Foundation } from "@expo/vector-icons";
 import { FontAwesome } from '@expo/vector-icons';
@@ -12,9 +11,13 @@ import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
+const Empty = ()=>{
+  return null;
+}
+
 const Main = (props) => {
   return (
-    <Tab.Navigator initialRouteName="Chat" tabBarOptions={{
+    <Tab.Navigator initialRouteName="AddContainer" tabBarOptions={{
         labelStyle : {
             fontFamily :'iranSans'
         },
@@ -43,8 +46,14 @@ const Main = (props) => {
         }}
       />
       <Tab.Screen
-        name="Add"
-        component={AddScreen}
+        listeners={({navigation})=>({
+          tabPress:event=>{
+              event.preventDefault();
+              navigation.navigate('Add');
+          }
+        })}
+        name="AddContainer"
+        component={Empty}
         options={{
           title: "ثبت آگهی",
           tabBarIcon: ({ size, color }) => (

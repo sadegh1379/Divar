@@ -7,6 +7,8 @@ import { useFonts } from 'expo-font';
 import {ActivityIndicator , View } from 'react-native';
 import {LightTheme , DarkTheme} from './screens/theme/Theme';
 import MainScreen from "./screens/main/Main";
+import AddScreen from "./screens/main/Add";
+
 
 const Stack = createStackNavigator();
 
@@ -35,10 +37,15 @@ export default function App() {
   return (
     <NavigationContainer theme={theme}>
       <StatusBar style="auto" />
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="Add">
         <Stack.Screen
           name="Main"
           component={MainScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Add"
+          component={AddScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

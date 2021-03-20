@@ -33,7 +33,7 @@ const DivarChat = (props) => {
         >
           <Image
             style={styles.divar}
-            source={require("../assets/images/divar.png")}
+            source={require("../../assets/images/divar.png")}
           />
         </View>
       </TouchableOpacity>
@@ -65,7 +65,7 @@ const DivarChat = (props) => {
           <View style={styles.picContainer}>
             <Image
               style={styles.pic}
-              source={require("../assets/images/nopic.png")}
+              source={require("../../assets/images/nopic.png")}
             />
           </View>
           <View>

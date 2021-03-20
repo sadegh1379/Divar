@@ -1,8 +1,11 @@
 export {TopHeader} from './TopHeader';
-export {ProfileInfo} from './ProfileInfo';
-export {ProfileItems} from './ProfileItems';
-export {DivarChat} from './DivarChat';
-export { ChatHeader} from './ChatHeader';
+export {ProfileInfo} from './profile/ProfileInfo';
+export {ProfileItems} from './profile/ProfileItems';
+export {DivarChat} from './chat/DivarChat';
+export { ChatHeader} from './chat/ChatHeader';
+export {AddSearchBar} from './add/AddSeachBar';
+export {AddItems} from './add/AddItems';
+
 
 
 
