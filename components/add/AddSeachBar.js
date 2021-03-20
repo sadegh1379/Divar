@@ -11,7 +11,7 @@ const AddSearchBar = (props)=>{
         <View style={[styles.container , {backgroundColor : colors.backgroundHead}]}>
             <View style={{width:'90%'}}>
              <EvilIcons style={styles.searchIcon} name="search" size={30} color={colors.textIcon} />
-             <TextInput placeholder="جستوجو در دسته ها" style={styles.myInput}/>
+             <TextInput placeholder="جستوجو در دسته ها" style={[styles.myInput , {backgroundColor :colors.background}]}/>
             </View>
             <TouchableRipple  rippleColor="rgba(0, 0, 0, .32)"  style={styles.icon}>
                 <AntDesign style={{alignSelf:'center'}} name="arrowright" size={24} color={colors.textIcon} />
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         width : '100%',
         flexDirection:'row',
         alignItems:'center',
-        padding : 10
+        padding : 10,
     },
     myInput:{
         padding : 6,
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         fontWeight : 'bold',
         textAlign :'right',
         paddingRight : 40
-
+    
     },
     icon : {
         width : '10%',
