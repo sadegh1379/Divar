@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 
     },
     text:{
-        fontSize : 20,
+        fontSize : 18,
         fontWeight : 'bold',
         fontFamily:'iranSans',
     }

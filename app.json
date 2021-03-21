@@ -4,6 +4,7 @@
     "slug": "Divar",
     "version": "1.0.0",
     "orientation": "portrait",
+    "sdkVersion": "38.0.0",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -17,13 +18,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.Divar.Divar",
+      "buildNumber": "1.0.0"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "package": "com.Divar.Divar",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
