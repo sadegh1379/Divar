@@ -31,7 +31,7 @@ class Main extends Component {
   render() {
     return (
       <Tab.Navigator
-        initialRouteName="Group"
+        initialRouteName="Home"
         tabBarOptions={{
           labelStyle: {
             fontFamily: "iranSans",
